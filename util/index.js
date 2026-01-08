@@ -6,3 +6,6 @@ function sayName() {
     console.log('My name is ${name1}')
 }
 
+function newFeatureAdd() {
+    console.log('this is a new feature b')
+}
