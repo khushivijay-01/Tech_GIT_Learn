@@ -1,6 +1,6 @@
-function add(a, b)
+function add(a, num2)
 {
-    return a + b
+    return a + num1
 }
 
 
