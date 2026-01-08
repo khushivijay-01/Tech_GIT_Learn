@@ -6,3 +6,6 @@ function sayName() {
     console.log('My name is ' + name1)
 }
 
+function newfn() {
+    console.log('Hey I am a new fn')
+}
