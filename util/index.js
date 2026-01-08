@@ -6,3 +6,4 @@ function sayName() {
     console.log('My name is ' + name1)
 }
 
+//comment for branch checking
