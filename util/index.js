@@ -7,3 +7,7 @@ function sayName() {
 }
 
 //comment for branch checking
+
+function newFeatureAdd() {
+    console.log('this is a new feat')
+}
