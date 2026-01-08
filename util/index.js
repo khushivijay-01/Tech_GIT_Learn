@@ -7,5 +7,5 @@ function sayName() {
 }
 
 console.log('My name is a')
-
+console.log('My name is b')
 
