@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  padding: 40px;
+}
+
+.cart-page {
+  max-width: 900px;
+  margin: auto;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: 900px;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-info {
+  flex: 1;
+  margin-left: 16px;
+}
+
+.cart-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cart-info p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.cart-price {
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.cart-qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.cart-qty button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: #2b79cc;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cart-qty span {
+  font-weight: 600;
+}
+
+.remove-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-summary h2 {
+  font-size: 22px;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.primary {
+  background: #2b79cc;
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #e0e0e0;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-qty {
+    margin: 12px 0;
+  }
+
+  .cart-summary {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

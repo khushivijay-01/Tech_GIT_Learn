@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roots & Bistro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="preloader" data-preload>
+      <p>Loading...</p>
+    </div>
+
+    <header class="header">
+      <div class="logo" id="header-logo">
+        <img src="images/logo.png" alt="Roots & Bistro Logo" />
+      </div>
+
+      <input id="search-input" type="text" placeholder="Search food..." />
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="Starters">Starters</option>
+        <option value="Main Course">Main Course</option>
+        <option value="Breads & Rice">Breads & Rice</option>
+        <option value="Fast Food">Fast Food</option>
+        <option value="Beverages">Beverages</option>
+        <option value="Desserts">Desserts</option>
+      </select>
+
+      <nav class="nav" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#menu-container">Menu</a>
+        <a href="#hours-contacts">Contact</a>
+        <a href="#enquiry">Enquiry</a>
+      </nav>
+      <a href="cart.html" class="cart-btn">
+        🛒 Cart <span id="cart-count">0</span>
+      </a>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Roots & Bistro</h1>
+        <h2>Rooted in Freshness, Served with Love</h2>
+        <p>
+          Discover a place where farm-fresh ingredients meet soulful cooking. At
+          Roots & Bistro, every dish is thoughtfully crafted to bring you
+          wholesome flavors, seasonal goodness, and an unforgettable dining
+          experience.
+        </p>
+        <a class="menu-btn" href="#menu-container">View Menu</a>
+      </div>
+    </section>
+
+    <div id="menu-container"></div>
+
+    <section class="hours-contacts" id="hours-contacts">
+      <div>
+        <h2>Opening Hours</h2>
+        <p>Monday–Friday: 10:00 AM - 10:00 PM</p>
+        <p>Saturday–Sunday: 9:00 AM - 11:00 PM</p>
+      </div>
+      <div>
+        <h2>Contact Us</h2>
+        <p>123 Food Street, Bangalore</p>
+        <p>+91 98765 43210</p>
+        <p>contact@roots&bistro.com</p>
+      </div>
+    </section>
+
+    <section class="enquiry" id="enquiry">
+      <h2>Any Enquiry, We're Here!</h2>
+      <p id="formMsg"></p>
+      <form>
+        <div class="form-group">
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+          /><br />
+
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          /><br />
+
+          <label for="phone">Phone No: </label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          /><br />
+
+          <label for="message">Message: </label>
+          <textarea
+            id="message"
+            rows="3"
+            placeholder="Your enquiry..."
+          ></textarea>
+        </div>
+        <br />
+        <button type="submit" id="enquire">Submit</button>
+      </form>
+    </section>
+
+    <footer id="footer" class="footer"></footer>
+    <button id="scrollTopBtn">⬆</button>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
